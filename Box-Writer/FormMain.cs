@@ -15,6 +15,9 @@ namespace Box_Writer
         public FormMain()
         {
             InitializeComponent();
+            BoxWriter bw = new BoxWriter("TEST_MESSAGE", "LABEL");
+            bw.Boxify();
+            rtxtBox.Text = bw.ToString();
         }
     }
 }

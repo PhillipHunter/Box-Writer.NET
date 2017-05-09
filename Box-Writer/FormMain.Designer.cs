@@ -108,6 +108,7 @@
             // 
             // rtxtBox
             // 
+            this.rtxtBox.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtBox.Location = new System.Drawing.Point(290, 57);
             this.rtxtBox.Name = "rtxtBox";
             this.rtxtBox.ReadOnly = true;
