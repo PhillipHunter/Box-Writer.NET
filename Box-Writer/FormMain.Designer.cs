@@ -40,6 +40,7 @@
             this.btnBoxify = new System.Windows.Forms.Button();
             this.btnCopy = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
+            this.lblText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtWord
@@ -124,6 +125,7 @@
             this.btnBoxify.TabIndex = 9;
             this.btnBoxify.Text = "Boxify";
             this.btnBoxify.UseVisualStyleBackColor = true;
+            this.btnBoxify.Click += new System.EventHandler(this.btnBoxify_Click);
             // 
             // btnCopy
             // 
@@ -133,6 +135,7 @@
             this.btnCopy.TabIndex = 10;
             this.btnCopy.Text = "Copy";
             this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
             // 
             // btnNew
             // 
@@ -142,12 +145,22 @@
             this.btnNew.TabIndex = 11;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // lblText
+            // 
+            this.lblText.AutoSize = true;
+            this.lblText.Location = new System.Drawing.Point(37, 399);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(0, 13);
+            this.lblText.TabIndex = 12;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 518);
+            this.Controls.Add(this.lblText);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnCopy);
             this.Controls.Add(this.btnBoxify);
@@ -181,6 +194,7 @@
         private System.Windows.Forms.Button btnBoxify;
         private System.Windows.Forms.Button btnCopy;
         private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Label lblText;
     }
 }
 

@@ -1,8 +1,9 @@
-﻿/**
- * @author Akhil Ramlakan
- *
+﻿/***
+ * 
+ * Author: Akhil Ramlakan
  * Stores text box
- */
+ * 
+ ***/
 
 using System;
 using System.Text;
@@ -179,7 +180,7 @@ namespace Box_Writer
 
         public void SetOffset(int n) { offset = n; }
 
-        public String ToString() { return box; }
+        public override String ToString() { return box; }
 
         static string JavaStyleSubstring(string s, int beginIndex, int endIndex)
         {
